@@ -1,0 +1,21 @@
+body{
+    background: #f5f6f5;
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+}
+
+.index{
+    width: 100w;
+    height: 100h;
+}
+
+.masthead {
+    color: white;
+    min-height: 30rem;
+    width: 100%;
+    height: 100%;
+    padding-top: 8rem;
+    background: url('http://www.smarthouseintegradores.com/wp-content/uploads/2016/11/smarthouse-que-hacemos1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
