@@ -28,13 +28,25 @@ pool.query = promisify(pool.query);
 
 module.exports = pool;*/
 
-const { Pool } = require("pg");
+/*const { Pool } = require("pg");
 // Coloca aquí tus credenciales
 const pool = new Pool({
   user: "postgres",
   host: "127.0.0.1",
   database: "database_links",
   password: "123",
+  port: 5432,
+});
+module.exports = pool;*/
+
+const { Pool } = require("pg");
+// Coloca aquí tus credenciales
+const pool = new Pool({
+  user: "ulbanazhnkpjmh",
+  uri: "postgres://ulbanazhnkpjmh:280070444eda080e32a90aa291fa174aed5bbf756d71002d4bdc8e5c9647ef02@ec2-174-129-18-210.compute-1.amazonaws.com:5432/dcnhvqeu96cd9e",
+  host: "ec2-174-129-18-210.compute-1.amazonaws.com",
+  database: "database_links",
+  password: "280070444eda080e32a90aa291fa174aed5bbf756d71002d4bdc8e5c9647ef02",
   port: 5432,
 });
 module.exports = pool;
