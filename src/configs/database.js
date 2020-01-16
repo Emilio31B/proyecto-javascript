@@ -1,4 +1,4 @@
-const mysql = require('mysql');
+/*const mysql = require('mysql');
 const { database } = require('./keys');
 const { promisify }= require('util');
 
@@ -26,6 +26,17 @@ pool.getConnection((err, connection) => {
 //Promisify Pool Querys
 pool.query = promisify(pool.query);
 
+module.exports = pool;*/
+
+const { Pool } = require("pg");
+// Coloca aquí tus credenciales
+const pool = new Pool({
+  user: "postgres",
+  host: "127.0.0.1",
+  database: "database_links",
+  password: "123",
+  port: 5432,
+});
 module.exports = pool;
 
 

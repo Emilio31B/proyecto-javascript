@@ -18,7 +18,7 @@ router.post('/add', async (req,res) =>{
         description,
         //user_id: req.user.id
     };
-    await pool.query('insert into links set ?',[newlink]);
+    await pool.query('insert into links values ?',[newlink]);
     res.redirect('/links');
 });
 
